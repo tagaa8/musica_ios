@@ -32,7 +32,10 @@ class AudioManager: NSObject, ObservableObject {
     func loadSong(_ song: Song) {
         currentSong = song
         
-        guard let url = URL(string: song.filePath) else { return }
+        guard let url = Bundle.main.url(forResource: song.filePath, withExtension: "mp3") else {
+            print("No se pudo encontrar el archivo: \(song.filePath).mp3")
+            return
+        }
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)

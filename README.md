@@ -1,6 +1,6 @@
 # Música Pal Héctor 🎵
 
-Una aplicación de reproductor de música para iOS desarrollada con SwiftUI, inspirada en Spotify pero con almacenamiento local y sin necesidad de conexión a internet.
+Una aplicación de reproductor de música para iOS desarrollada con SwiftUI. La app incluye sus propias canciones integradas (no usa tu biblioteca musical), no requiere internet y todo se almacena localmente.
 
 ## Características Principales
 
@@ -65,16 +65,20 @@ open MusicaPalHector/MusicaPalHector.xcodeproj
    - El Bundle Identifier debe ser único (puedes cambiarlo si es necesario)
    - Xcode generará automáticamente los certificados necesarios
 
-### 4. Añadir Canciones
+### 4. Las Canciones Incluidas
 
-Las canciones deben añadirse en formato `.mp3` en la carpeta:
-```
-MusicaPalHector/MusicaPalHector/Resources/Songs/
-```
+La app ya incluye las siguientes canciones:
+- **Entrega Total** - La Beriso
+- **Miedo** - Caifanes
+- **Un Hombre Normal** - Espinoza Paz  
+- **Gema** - Vicente Fernández
 
-1. Arrastra los archivos MP3 a esta carpeta en Xcode
-2. Asegúrate de que "Copy items if needed" esté marcado
-3. Selecciona "MusicaPalHector" como target
+Para añadir más canciones:
+1. Copia los archivos MP3 a: `MusicaPalHector/MusicaPalHector/Resources/Songs/`
+2. En Xcode, arrastra los archivos al proyecto
+3. Asegúrate de que "Copy items if needed" esté marcado
+4. Selecciona "MusicaPalHector" como target
+5. Actualiza el archivo `DataManager.swift` con los nuevos títulos
 
 ### 5. Ejecutar en el Simulador
 
@@ -99,7 +103,50 @@ MusicaPalHector/MusicaPalHector/Resources/Songs/
 2. Confía en tu certificado de desarrollador
 3. Ahora puedes abrir la app
 
-## Distribución a Amigos (TestFlight)
+## Instalación GRATUITA (Sin Cuenta de Desarrollador)
+
+### Opción 1: Instalación Personal Gratuita (7 días)
+**Sin costo, pero con limitaciones**
+
+1. **En tu Mac:**
+   - Abre Xcode y el proyecto
+   - En Signing & Capabilities, selecciona tu Apple ID personal (no necesitas cuenta de paga)
+   - Xcode creará un certificado de desarrollo gratuito
+
+2. **Conecta tu iPhone:**
+   - Conecta con cable USB
+   - Selecciona tu iPhone como destino
+   - Presiona Run (Cmd+R)
+
+3. **En tu iPhone:**
+   - Ve a Ajustes > General > VPN y gestión de dispositivos
+   - Confía en tu certificado de desarrollador
+   - La app funcionará por 7 días
+
+**Limitaciones:**
+- ⏰ La app caduca cada 7 días (debes reinstalar)
+- 📱 Máximo 3 dispositivos activos por Apple ID
+- 🔄 Necesitas Xcode para reinstalar
+
+### Opción 2: Sideloading con AltStore (Gratuito, más conveniente)
+**Renovación automática cada 7 días**
+
+1. **Instala AltServer en tu Mac:**
+   - Descarga desde [altstore.io](https://altstore.io)
+   - Instala y ejecuta AltServer
+
+2. **Instala AltStore en tu iPhone:**
+   - Conecta tu iPhone
+   - Desde AltServer en Mac, selecciona "Install AltStore"
+
+3. **Instala la app:**
+   - Exporta el archivo .ipa desde Xcode
+   - Abre AltStore en tu iPhone
+   - Instala el .ipa
+
+**Ventaja:** AltStore renueva automáticamente la app cuando estás en la misma red WiFi que tu Mac
+
+## Distribución a Amigos (Con Cuenta de Desarrollador)
 
 ### Opción 1: TestFlight (Recomendado)
 **Requisitos**: Cuenta de desarrollador de Apple ($99/año)
@@ -123,21 +170,16 @@ MusicaPalHector/MusicaPalHector/Resources/Songs/
 5. Comparte el archivo .ipa
 6. Tus amigos pueden instalarlo con iTunes o Apple Configurator
 
-### Opción 3: Instalación Directa (Limitado)
-**Sin cuenta de desarrollador**: Solo 3 dispositivos, la app caduca en 7 días
+### Opción 3: Para Compartir con Amigos (Sin Cuenta de Desarrollador)
 
-1. Tus amigos necesitan Xcode instalado
-2. Deben clonar el repositorio
-3. Compilar e instalar directamente desde Xcode
-4. La app dejará de funcionar después de 7 días
+**Usando Sideloadly (Más fácil para tus amigos):**
+1. Exporta el archivo .ipa desde Xcode
+2. Tus amigos descargan [Sideloadly](https://sideloadly.io) en su computadora
+3. Conectan su iPhone y arrastran el .ipa a Sideloadly
+4. Inician sesión con su Apple ID personal
+5. La app se instala (caduca en 7 días)
 
-## Limitaciones sin Cuenta de Desarrollador
-
-- **Máximo 3 dispositivos** registrados simultáneamente
-- **La app caduca en 7 días** y debe reinstalarse
-- **No puedes usar TestFlight**
-- **No puedes distribuir archivos .ipa**
-- Tus amigos necesitarían Xcode para instalar la app
+**Ventaja:** Tus amigos no necesitan Xcode ni conocimientos técnicos
 
 ## Estructura del Proyecto
 
@@ -161,16 +203,34 @@ MusicaPalHector/
 
 ## Añadir Más Canciones
 
-1. Prepara tus archivos MP3
-2. En Xcode, arrastra los archivos a `Resources/Songs`
-3. Modifica `DataManager.swift` en el método `loadSampleSongs()` para incluir las nuevas canciones:
+### Paso 1: Preparar los archivos
+- Nombra tus archivos MP3 sin espacios (ej: `MiCancion.mp3`)
+- Cópialos a la carpeta `MusicaPalHector/MusicaPalHector/Resources/Songs/`
+
+### Paso 2: En Xcode
+1. Abre el proyecto en Xcode
+2. Click derecho en la carpeta `Resources/Songs`
+3. Selecciona "Add Files to MusicaPalHector..."
+4. Selecciona los MP3 nuevos
+5. ✅ Marca "Copy items if needed"
+6. ✅ Marca "Add to targets: MusicaPalHector"
+
+### Paso 3: Actualizar el código
+Edita `DataManager.swift` en el método `loadSampleSongs()`:
 
 ```swift
 songs = [
-    Song(title: "Nombre Canción", artist: "Artista", duration: 180, filePath: "archivo.mp3"),
-    // Añade más canciones aquí
+    // Canciones actuales
+    Song(title: "Entrega Total", artist: "La Beriso", duration: 225, filePath: "EntregaTotal"),
+    Song(title: "Miedo", artist: "Caifanes", duration: 240, filePath: "CaifanesMiedo"),
+    Song(title: "Un Hombre Normal", artist: "Espinoza Paz", duration: 195, filePath: "UnHombreNormal"),
+    Song(title: "Gema", artist: "Vicente Fernández", duration: 180, filePath: "VicenteFernandezGema"),
+    // Añade las nuevas aquí (sin la extensión .mp3)
+    Song(title: "Nueva Canción", artist: "Artista", duration: 200, filePath: "NombreArchivo"),
 ]
 ```
+
+**Nota:** El `filePath` debe ser el nombre del archivo SIN la extensión `.mp3`
 
 ## Comandos Git Útiles
 

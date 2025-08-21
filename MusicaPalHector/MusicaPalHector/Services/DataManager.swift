@@ -56,11 +56,10 @@ class DataManager: ObservableObject {
     func loadSampleSongs() {
         if songs.isEmpty {
             songs = [
-                Song(title: "Summer Vibes", artist: "The Beats", duration: 180, filePath: "song1.mp3"),
-                Song(title: "Night Drive", artist: "Electronic Dreams", duration: 240, filePath: "song2.mp3"),
-                Song(title: "Coffee Shop", artist: "Jazz Collective", duration: 200, filePath: "song3.mp3"),
-                Song(title: "Mountain Echo", artist: "Nature Sounds", duration: 150, filePath: "song4.mp3"),
-                Song(title: "City Lights", artist: "Urban Flow", duration: 210, filePath: "song5.mp3")
+                Song(title: "Entrega Total", artist: "La Beriso", duration: 225, filePath: "EntregaTotal"),
+                Song(title: "Miedo", artist: "Caifanes", duration: 240, filePath: "CaifanesMiedo"),
+                Song(title: "Un Hombre Normal", artist: "Espinoza Paz", duration: 195, filePath: "UnHombreNormal"),
+                Song(title: "Gema", artist: "Vicente Fernández", duration: 180, filePath: "VicenteFernandezGema")
             ]
             saveData()
         }
