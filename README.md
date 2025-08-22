@@ -52,10 +52,33 @@ cd musica_ios
 
 ### 2. Abrir en Xcode
 
+#### Opción A: Si el proyecto abre correctamente
 ```bash
 # Abrir el proyecto en Xcode
 open MusicaPalHector/MusicaPalHector.xcodeproj
 ```
+
+#### Opción B: Si Xcode dice que el proyecto está dañado
+**SOLUCIÓN: Crear el proyecto desde cero**
+
+1. **Abre Xcode** y selecciona "Create New Project"
+2. Selecciona **iOS → App** y Next
+3. Configura:
+   - Product Name: `MusicaPalHector`
+   - Team: Tu Apple ID
+   - Organization Identifier: `com.hector`
+   - Interface: **SwiftUI**
+   - Language: **Swift**
+   - Use Core Data: **NO**
+   - Include Tests: **NO**
+4. Guarda el proyecto en una carpeta temporal
+5. **Reemplaza los archivos** con los del repositorio:
+   - Copia todos los archivos de `Views/`, `Models/`, `Services/`
+   - Arrastra las carpetas a Xcode
+   - Marca "Copy items if needed"
+   - Arrastra los 4 archivos MP3 a Xcode
+6. En Xcode, elimina el ContentView.swift que viene por defecto
+7. Compila y ejecuta
 
 ### 3. Configurar el Proyecto
 
