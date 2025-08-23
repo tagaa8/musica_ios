@@ -84,6 +84,44 @@ MusicaPalHector > My Mac (Designed for iPad)
 2. Se abrirá una ventana con un iPhone virtual
 3. La app se instalará y abrirá automáticamente
 
+## 🚨 ERROR: "Build input file cannot be found: ContentView.swift"
+
+### PROBLEMA:
+Xcode está buscando un archivo ContentView.swift que no existe o está mal referenciado.
+
+### SOLUCIÓN RÁPIDA:
+
+#### Paso 1: Eliminar referencia rota
+1. **Click en el proyecto** (carpeta azul principal "MusicaPalHector")
+2. **Click en TARGETS → MusicaPalHector**
+3. **Click en "Build Phases"**
+4. **Expande "Compile Sources"**
+5. **BUSCA ContentView.swift** (aparecerá en rojo si está roto)
+6. **Click en ContentView.swift** y presiona la tecla **Delete**
+
+#### Paso 2: Añadir el ContentView.swift correcto
+1. **Busca en tu repositorio clonado**: `Views/ContentView.swift`
+2. **Arrastra el archivo** desde Finder a Xcode
+3. **Marca ✅ "Copy items if needed"**
+4. **Marca ✅ Target: MusicaPalHector**
+5. **Click "Add"**
+
+#### Paso 3: Verificar que esté añadido
+1. Ve a **Build Phases → Compile Sources**
+2. ContentView.swift debe aparecer en la lista (sin color rojo)
+
+### SOLUCIÓN ALTERNATIVA (Si lo anterior no funciona):
+
+#### Método "Borrón y cuenta nueva":
+1. **Selecciona TODOS los archivos** en el panel izquierdo de Xcode
+2. **Click derecho → Delete → Remove References** (NO "Move to Trash")
+3. **Ahora añade TODO de nuevo:**
+   - Drag & drop la carpeta `Views` completa
+   - Drag & drop la carpeta `Models` completa  
+   - Drag & drop la carpeta `Services` completa
+   - Drag & drop los 4 archivos MP3
+   - **Siempre marca ✅ "Copy items if needed"**
+
 ## 🆘 SI TODAVÍA NO FUNCIONA
 
 ### Opción Nuclear - Crear proyecto desde cero:

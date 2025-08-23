@@ -249,9 +249,14 @@ open MusicaPalHector/MusicaPalHector.xcodeproj
 2. TARGETS → MusicaPalHector
 3. Minimum Deployments → cambiar a iOS 16.0
 
-### Error 4: "ContentView already exists"
-**Problema**: Hay dos ContentView.swift
-**Solución**: Eliminar el que NO está en la carpeta Views
+### Error 4: "Build input file cannot be found: ContentView.swift"
+**Problema**: Xcode busca un archivo ContentView.swift que no encuentra
+**Solución**:
+1. Click en proyecto (carpeta azul) → TARGETS → MusicaPalHector
+2. Build Phases → Compile Sources
+3. Busca ContentView.swift (aparece en rojo) y elimínalo
+4. Arrastra Views/ContentView.swift del repo a Xcode
+5. ✅ Copy items if needed + Target: MusicaPalHector
 
 ## 📱 USAR EL SIMULADOR DE IPHONE
 
