@@ -6,6 +6,15 @@ Una aplicación de reproductor de música para iOS desarrollada con SwiftUI. La 
 
 # 🚨 SI ESTÁS PERDIDO EN XCODE - LEE ESTO PRIMERO
 
+## 💀 ¿ERROR "Failed to open a document"?
+**El proyecto está corrupto. Solución:**
+1. **File → New → Project** (crear nuevo)
+2. **iOS → App → SwiftUI**
+3. **Copiar todos los archivos** del repo al proyecto nuevo
+4. [Ver guía completa en SOLUCION_PROYECTO_CORRUPTO.md]
+
+---
+
 ## Tu proyecto se ve así (MAL) ❌:
 ```
 📂 MusicaPalHector
