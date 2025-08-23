@@ -22,7 +22,6 @@
 		1A2B3C4D5E6F7890ABCDEF17 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF18 /* AudioManager.swift */; };
 		1A2B3C4D5E6F7890ABCDEF19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1A /* DataManager.swift */; };
 		1A2B3C4D5E6F7890ABCDEF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1C /* Assets.xcassets */; };
-		1A2B3C4D5E6F7890ABCDEF47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF48 /* Info.plist */; };
 		1A2B3C4D5E6F7890ABCDEF1D /* EntregaTotal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1E /* EntregaTotal.mp3 */; };
 		1A2B3C4D5E6F7890ABCDEF1F /* CaifanesMiedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF20 /* CaifanesMiedo.mp3 */; };
 		1A2B3C4D5E6F7890ABCDEF21 /* UnHombreNormal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF22 /* UnHombreNormal.mp3 */; };
@@ -206,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2B3C4D5E6F7890ABCDEF1B /* Assets.xcassets in Resources */,
-				1A2B3C4D5E6F7890ABCDEF47 /* Info.plist in Resources */,
 				1A2B3C4D5E6F7890ABCDEF1D /* EntregaTotal.mp3 in Resources */,
 				1A2B3C4D5E6F7890ABCDEF1F /* CaifanesMiedo.mp3 in Resources */,
 				1A2B3C4D5E6F7890ABCDEF21 /* UnHombreNormal.mp3 in Resources */,
