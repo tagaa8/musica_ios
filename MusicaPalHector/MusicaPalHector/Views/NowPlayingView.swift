@@ -7,6 +7,8 @@ struct NowPlayingView: View {
     @State private var isDragging = false
     @State private var waveformImage: UIImage?
     @State private var animateWave = false
+    @State private var showQueue = false
+    @State private var showOptionsMenu = false
     
     var body: some View {
         ZStack {
@@ -34,12 +36,24 @@ struct NowPlayingView: View {
                     
                     Spacer()
                     
-                    Button(action: {}) {
-                        Image(systemName: "ellipsis")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                            .padding()
+                    HStack(spacing: 15) {
+                        Button(action: {
+                            showQueue.toggle()
+                        }) {
+                            Image(systemName: "list.bullet")
+                                .font(.title2)
+                                .foregroundColor(.white)
+                        }
+                        
+                        Button(action: {
+                            showOptionsMenu.toggle()
+                        }) {
+                            Image(systemName: "ellipsis")
+                                .font(.title2)
+                                .foregroundColor(.white)
+                        }
                     }
+                    .padding(.trailing)
                 }
                 .padding(.top, 40)
                 
@@ -66,7 +80,7 @@ struct NowPlayingView: View {
                 }
                 .padding(.vertical, UIScreen.main.bounds.height > 800 ? 30 : 15)
                 
-                VStack(spacing: UIScreen.main.bounds.height > 800 ? 15 : 10) {
+                VStack(spacing: UIScreen.main.bounds.height > 800 ? 15 : 8) {
                     HStack {
                         Text(formatTime(audioManager.currentTime))
                             .font(.caption)
@@ -88,7 +102,7 @@ struct NowPlayingView: View {
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
-                    .padding(.horizontal, 30)
+                    .padding(.horizontal, 20)
                     
                     HStack(spacing: UIScreen.main.bounds.width > 375 ? 50 : 30) {
                         Button(action: {
@@ -135,7 +149,7 @@ struct NowPlayingView: View {
                     }
                     .padding(.vertical, UIScreen.main.bounds.height > 800 ? 20 : 10)
                     
-                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 30 : 20) {
+                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 25 : 15) {
                         Button(action: {
                             if let song = audioManager.currentSong {
                                 dataManager.toggleLike(for: song)
@@ -145,23 +159,23 @@ struct NowPlayingView: View {
                             }
                         }) {
                             Image(systemName: (dataManager.songs.first(where: { $0.id == audioManager.currentSong?.id })?.isLiked ?? false) ? "heart.fill" : "heart")
-                                .font(.system(size: 24))
+                                .font(.system(size: UIScreen.main.bounds.height > 800 ? 24 : 20))
                                 .foregroundColor((dataManager.songs.first(where: { $0.id == audioManager.currentSong?.id })?.isLiked ?? false) ? .pink : .white)
                         }
                         
                         Spacer()
                         
-                        HStack(spacing: 10) {
+                        HStack(spacing: 8) {
                             Image(systemName: "speaker.fill")
-                                .font(.caption)
+                                .font(.caption2)
                                 .foregroundColor(.gray)
                             
                             Slider(value: $audioManager.volume, in: 0...1)
-                                .frame(width: 120)
+                                .frame(width: UIScreen.main.bounds.width > 375 ? 100 : 80)
                                 .accentColor(.purple)
                             
                             Image(systemName: "speaker.wave.3.fill")
-                                .font(.caption)
+                                .font(.caption2)
                                 .foregroundColor(.gray)
                         }
                         
@@ -169,15 +183,41 @@ struct NowPlayingView: View {
                         
                         Button(action: {}) {
                             Image(systemName: "square.and.arrow.up")
-                                .font(.system(size: 24))
+                                .font(.system(size: UIScreen.main.bounds.height > 800 ? 24 : 20))
                                 .foregroundColor(.white)
                         }
                     }
-                    .padding(.horizontal, 30)
+                    .padding(.horizontal, 20)
                 }
                 
                 Spacer()
             }
+        }
+        .sheet(isPresented: $showQueue) {
+            QueueView()
+                .environmentObject(audioManager)
+                .environmentObject(dataManager)
+        }
+        .actionSheet(isPresented: $showOptionsMenu) {
+            ActionSheet(
+                title: Text(audioManager.currentSong?.title ?? "Opciones"),
+                buttons: [
+                    .default(Text("Añadir a cola")) {
+                        if let song = audioManager.currentSong {
+                            audioManager.addToQueue(song)
+                        }
+                    },
+                    .default(Text("Añadir a Me gusta")) {
+                        if let song = audioManager.currentSong {
+                            dataManager.toggleLike(for: song)
+                            if let index = dataManager.songs.firstIndex(where: { $0.id == song.id }) {
+                                audioManager.currentSong = dataManager.songs[index]
+                            }
+                        }
+                    },
+                    .cancel(Text("Cancelar"))
+                ]
+            )
         }
     }
     

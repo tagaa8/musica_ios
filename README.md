@@ -118,4 +118,32 @@ Luego abre Xcode y dale ▶️
 
 ---
 
+---
+
+# 📱 PROBAR EN TU iPHONE (SIN APP STORE)
+
+## PASO 1: CONECTAR iPhone
+1. Conecta tu iPhone a la Mac con cable USB
+2. En el iPhone: `Configuración` → `Privacidad` → `Modo de desarrollador` → **Activar**
+3. En el iPhone: `Configuración` → `General` → `Gestión de perfiles` → Confía en tu Apple ID
+
+## PASO 2: CONFIGURAR XCODE
+1. En Xcode, donde dice **iPhone 15 Pro**, selecciona **tu iPhone**
+2. Si es la primera vez: Xcode pedirá confiar en tu Mac desde el iPhone
+3. En el iPhone aparecerá: **"¿Confiar en este dispositivo?"** → **Confiar**
+
+## PASO 3: INSTALAR EN iPhone
+1. Dale ▶️ en Xcode (como siempre)
+2. Xcode compilará e instalará la app en tu iPhone
+3. **IMPORTANTE**: La app solo funcionará 7 días sin cuenta de desarrollador
+
+## PASO 4: SI DICE "DESARROLLADOR NO CONFIABLE"
+1. Ve a: `Configuración` → `General` → `Gestión de perfiles y dispositivos`
+2. Busca tu Apple ID y dale **"Confiar"**
+3. Ya puedes usar la app en tu iPhone
+
+**NOTA**: La app se instala localmente, NO se sube al App Store. Es solo para pruebas.
+
+---
+
 **Si sigues estos pasos exactos, la app funcionará sin errores.**
