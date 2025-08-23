@@ -44,7 +44,12 @@ open /Applications/Xcode.app
    - **Language**: Swift
    - **Interface**: **SwiftUI** ← SÚPER IMPORTANTE
    - **Use Core Data**: NO ❌
-   - **Include Tests**: NO ❌
+   - **Testing System**: **None** (cambia de "SwiftTestingWithXCTest" a "None")
+   - **Storage**: **None** (déjalo como está)
+   
+   **¿Qué hacen estas opciones?**
+   - **Testing System**: Crea archivos para hacer tests automáticos - NO los necesitamos
+   - **Storage**: Añade base de datos Core Data - NO la necesitamos (usamos UserDefaults)
    - Click: **Next**
    - **Guarda en**: `~/Desktop/Codigo Web/` (o donde prefieras)
    - Click: **Create**
