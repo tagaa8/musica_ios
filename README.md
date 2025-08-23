@@ -130,6 +130,41 @@ Tu proyecto debe verse así en Xcode:
 
 # 🔧 SI HAY ERRORES
 
+## Error: "Failed to launch app in reasonable time"
+**El simulador está lento o tiene problemas. Solución:**
+
+```bash
+# 1. Cerrar Xcode completamente
+killall Xcode
+
+# 2. Cerrar simulador
+killall Simulator
+
+# 3. Limpiar cache de simulador
+xcrun simctl shutdown all
+xcrun simctl erase all
+
+# 4. Reiniciar Mac
+sudo shutdown -r now
+```
+
+**Después del reinicio:**
+1. **Abre Xcode**
+2. **Selecciona iPhone 15 Pro** (o cualquier iPhone)
+3. **Dale ▶️** de nuevo
+4. **Espera 3-5 minutos** (el simulador tarda en arrancar la primera vez)
+
+**SOLUCIÓN RÁPIDA (sin reiniciar):**
+1. **En Xcode**: Product → Clean Build Folder (Cmd+Shift+K)
+2. **Espera** que termine de limpiar
+3. **Selecciona iPhone 14** (en vez de iPhone 15 Pro)
+4. **Dale ▶️** y espera 5 minutos
+5. **Si sigue fallando**, usa la solución de arriba (reiniciar Mac)
+
+---
+
+# 🔧 OTROS ERRORES COMUNES
+
 ## Error: "Cannot find 'AudioManager'"
 ```bash
 # La carpeta Services no se añadió correctamente
