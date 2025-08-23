@@ -23,9 +23,33 @@ git clone git@github.com:tagaa8/musica_ios.git
 cd musica_ios
 ```
 
+**RESULTADO:** Ahora tienes esta estructura en tu Desktop:
+```
+📁 Desktop/
+  📁 musica_ios/                    ← EL REPOSITORIO PRINCIPAL
+    📁 MusicaPalHector/             ← PROYECTO XCODE (NO ABRAS ESTE)
+      📁 MusicaPalHector.xcodeproj  ← ESTÁ CORRUPTO
+      📁 MusicaPalHector/           ← CARPETA CON ARCHIVOS
+        📁 Views/                   ← AQUÍ ESTÁN LOS ARCHIVOS QUE NECESITAS
+          📄 ContentView.swift
+          📄 AllSongsView.swift
+          📄 etc...
+        📁 Models/
+          📄 Song.swift
+        📁 Services/
+          📄 AudioManager.swift
+          📄 DataManager.swift
+        📁 Resources/
+          📁 Songs/
+            🎵 EntregaTotal.mp3
+            🎵 CaifanesMiedo.mp3
+            🎵 UnHombreNormal.mp3
+            🎵 VicenteFernandezGema.mp3
+```
+
 ## PASO 3: CREAR PROYECTO NUEVO EN XCODE
 
-**El proyecto actual está corrupto, necesitas crear uno nuevo:**
+**NO abras el proyecto existente (está corrupto). Crea uno nuevo:**
 
 1. **Abre Xcode**:
 ```bash
@@ -46,52 +70,91 @@ open /Applications/Xcode.app
    - **Use Core Data**: NO ❌
    - **Testing System**: **None** (cambia de "SwiftTestingWithXCTest" a "None")
    - **Storage**: **None** (déjalo como está)
-   
-   **¿Qué hacen estas opciones?**
-   - **Testing System**: Crea archivos para hacer tests automáticos - NO los necesitamos
-   - **Storage**: Añade base de datos Core Data - NO la necesitamos (usamos UserDefaults)
    - Click: **Next**
-   - **Guarda en**: `~/Desktop/Codigo Web/` (o donde prefieras)
+   - **IMPORTANTE - GUARDA EN**: `~/Desktop/MiProyectoNuevo/` (NO dentro de musica_ios)
    - Click: **Create**
 
+**RESULTADO:** Ahora tienes DOS carpetas en Desktop:
+```
+📁 Desktop/
+  📁 musica_ios/                    ← REPOSITORIO CON ARCHIVOS FUENTE
+  📁 MiProyectoNuevo/              ← TU PROYECTO NUEVO DE XCODE
+    📁 MusicaPalHector.xcodeproj    ← ESTE SÍ FUNCIONA
+    📁 MusicaPalHector/             ← CARPETA DE TU PROYECTO NUEVO
+```
+
 ## PASO 4: LIMPIAR PROYECTO NUEVO
+
+**En Xcode (tu proyecto nuevo):**
 
 1. **Elimina ContentView.swift** que viene por defecto:
    - Click derecho en "ContentView.swift" → Delete → Move to Trash
 
-## PASO 5: AÑADIR TODOS LOS ARCHIVOS
+## PASO 5: COPIAR ARCHIVOS DEL REPOSITORIO AL PROYECTO NUEVO
 
-1. **Abre Finder** con el repositorio clonado:
+### 5.1 ABRIR FINDER CON EL REPOSITORIO
+
 ```bash
-open ~/Desktop/musica_ios
+# Abre Finder en la carpeta con los archivos fuente
+open ~/Desktop/musica_ios/MusicaPalHector/MusicaPalHector
 ```
 
-2. **Arrastra carpeta "Views" completa** desde Finder a Xcode:
-   - Ponla dentro de la carpeta azul "MusicaPalHector"
+**DEBES VER:** Una ventana de Finder con estas carpetas:
+- 📁 Views
+- 📁 Models  
+- 📁 Services
+- 📁 Resources
+- 📁 Assets (ignórala)
+- 📄 Otros archivos (ignóralos)
+
+### 5.2 COPIAR CARPETA VIEWS
+
+1. **En Finder**: Selecciona la carpeta **"Views"** completa
+2. **Arrástrala** a Xcode, dentro de la carpeta azul "MusicaPalHector" (tu proyecto nuevo)
+3. **En el diálogo que aparece, marca:**
    - ✅ Copy items if needed
    - ✅ Create groups  
    - ✅ Add to target: MusicaPalHector
-   - Click: **Add**
+4. **Click: Add**
 
-3. **Arrastra carpeta "Models" completa** desde Finder a Xcode:
-   - Mismo proceso: ✅ Copy items, ✅ Create groups, ✅ Add to target
+### 5.3 COPIAR CARPETA MODELS
 
-4. **Arrastra carpeta "Services" completa** desde Finder a Xcode:
-   - Mismo proceso: ✅ Copy items, ✅ Create groups, ✅ Add to target
+1. **En Finder**: Selecciona la carpeta **"Models"** completa
+2. **Arrástrala** a Xcode, dentro de la carpeta azul "MusicaPalHector"
+3. **Marca:** ✅ Copy items, ✅ Create groups, ✅ Add to target
+4. **Click: Add**
 
-5. **Arrastra los 4 archivos MP3**:
-   - Ve a `Resources/Songs/` en Finder
-   - Selecciona los 4 MP3 (Cmd+Click)
-   - Arrástralos a Xcode
-   - ✅ Copy items, ✅ Add to target
+### 5.4 COPIAR CARPETA SERVICES
 
-## PASO 6: VERIFICAR ESTRUCTURA
+1. **En Finder**: Selecciona la carpeta **"Services"** completa
+2. **Arrástrala** a Xcode, dentro de la carpeta azul "MusicaPalHector"
+3. **Marca:** ✅ Copy items, ✅ Create groups, ✅ Add to target
+4. **Click: Add**
 
-Tu proyecto debe verse así en Xcode:
+### 5.5 COPIAR ARCHIVOS MP3
+
+```bash
+# Abre Finder en la carpeta de canciones
+open ~/Desktop/musica_ios/MusicaPalHector/MusicaPalHector/Resources/Songs
 ```
-📂 MusicaPalHector
+
+1. **En Finder**: Selecciona los 4 archivos MP3 (Cmd+Click para seleccionar múltiples):
+   - EntregaTotal.mp3
+   - CaifanesMiedo.mp3
+   - UnHombreNormal.mp3
+   - VicenteFernandezGema.mp3
+2. **Arrástralos** a Xcode, dentro de la carpeta azul "MusicaPalHector"
+3. **Marca:** ✅ Copy items, ✅ Add to target
+4. **Click: Add**
+
+## PASO 6: VERIFICAR ESTRUCTURA EN XCODE
+
+**Tu proyecto en Xcode debe verse EXACTAMENTE así:**
+
+```
+📂 MusicaPalHector (carpeta azul)
   📄 MusicaPalHectorApp.swift
-  📂 Views
+  📂 Views (nueva - debe tener fondo azul)
     📄 ContentView.swift
     📄 AllSongsView.swift
     📄 PlaylistsView.swift
@@ -101,28 +164,30 @@ Tu proyecto debe verse así en Xcode:
     📄 SongRowView.swift
     📄 PlaylistDetailView.swift
     📄 PlaylistPickerView.swift
-  📂 Models
+  📂 Models (nueva - debe tener fondo azul)
     📄 Song.swift
-  📂 Services
+  📂 Services (nueva - debe tener fondo azul)
     📄 AudioManager.swift
     📄 DataManager.swift
-  🎵 EntregaTotal.mp3
-  🎵 CaifanesMiedo.mp3
-  🎵 UnHombreNormal.mp3
-  🎵 VicenteFernandezGema.mp3
-  📂 Assets
+  🎵 EntregaTotal.mp3 (archivo individual)
+  🎵 CaifanesMiedo.mp3 (archivo individual)
+  🎵 UnHombreNormal.mp3 (archivo individual)
+  🎵 VicenteFernandezGema.mp3 (archivo individual)
+  📂 Assets (ya estaba)
 ```
+
+**SI NO SE VE ASÍ:** Vuelve al PASO 5 y arrastra las carpetas de nuevo.
 
 ## PASO 7: SELECCIONAR SIMULADOR DE IPHONE
 
-1. **En la barra superior de Xcode**, busca donde dice "My Mac" o similar
-2. **Click ahí** y selecciona **iPhone 15 Pro** (cualquier iPhone sirve)
+1. **En la barra superior de Xcode**, busca donde dice "My Mac" o "MusicaPalHector › My Mac"
+2. **Click ahí** y selecciona **iPhone 15 Pro** (o iPhone 14, iPhone 13, cualquier iPhone sirve)
 3. **NO selecciones**: My Mac, Designed for iPad, Any iOS Device
 
 ## PASO 8: EJECUTAR LA APP
 
 1. **Click en el botón ▶️** (triángulo grande arriba a la izquierda)
-2. **Espera 2-5 minutos** (primera compilación es lenta)
+2. **Espera 3-5 minutos** (primera compilación es lenta)
 3. **Se abre iPhone virtual** con la app instalada
 4. **¡LISTO!** Ya tienes "Música Pal Héctor" funcionando
 
@@ -131,62 +196,37 @@ Tu proyecto debe verse así en Xcode:
 # 🔧 SI HAY ERRORES
 
 ## Error: "Failed to launch app in reasonable time"
-**El simulador está lento o tiene problemas. Solución:**
 
 ```bash
-# 1. Cerrar Xcode completamente
+# SOLUCIÓN RÁPIDA:
+# En Xcode: Product → Clean Build Folder (Cmd+Shift+K)
+```
+1. Espera que termine
+2. Cambia a **iPhone 14** (en vez de iPhone 15 Pro)
+3. Dale ▶️ y espera **5 minutos completos**
+
+```bash
+# SOLUCIÓN COMPLETA (si no funciona la rápida):
 killall Xcode
-
-# 2. Cerrar simulador
 killall Simulator
-
-# 3. Limpiar cache de simulador
 xcrun simctl shutdown all
 xcrun simctl erase all
-
-# 4. Reiniciar Mac
 sudo shutdown -r now
 ```
 
-**Después del reinicio:**
-1. **Abre Xcode**
-2. **Selecciona iPhone 15 Pro** (o cualquier iPhone)
-3. **Dale ▶️** de nuevo
-4. **Espera 3-5 minutos** (el simulador tarda en arrancar la primera vez)
-
-**SOLUCIÓN RÁPIDA (sin reiniciar):**
-1. **En Xcode**: Product → Clean Build Folder (Cmd+Shift+K)
-2. **Espera** que termine de limpiar
-3. **Selecciona iPhone 14** (en vez de iPhone 15 Pro)
-4. **Dale ▶️** y espera 5 minutos
-5. **Si sigue fallando**, usa la solución de arriba (reiniciar Mac)
-
----
-
-# 🔧 OTROS ERRORES COMUNES
-
 ## Error: "Cannot find 'AudioManager'"
-```bash
-# La carpeta Services no se añadió correctamente
-# Vuelve al PASO 5 y arrastra la carpeta Services de nuevo
-```
+**Problema:** La carpeta Services no se copió correctamente
+**Solución:** Vuelve al PASO 5.4 y arrastra la carpeta Services de nuevo
 
 ## Error: "Cannot find 'Song'"
-```bash
-# La carpeta Models no se añadió correctamente  
-# Vuelve al PASO 5 y arrastra la carpeta Models de nuevo
-```
+**Problema:** La carpeta Models no se copió correctamente  
+**Solución:** Vuelve al PASO 5.3 y arrastra la carpeta Models de nuevo
 
 ## Error: "Build input file cannot be found: ContentView.swift"
 1. Click en proyecto (carpeta azul) → TARGETS → MusicaPalHector
 2. Build Phases → Compile Sources
 3. Busca ContentView.swift en rojo y elimínalo (tecla Delete)
 4. La carpeta Views debería tener el ContentView.swift correcto
-
-## Error: "No such module SwiftUI"
-1. Click en proyecto (carpeta azul)
-2. TARGETS → MusicaPalHector
-3. Minimum Deployments → iOS 16.0
 
 ---
 
@@ -199,33 +239,28 @@ sudo shutdown -r now
 
 ---
 
-# 🎵 CANCIONES INCLUIDAS
+# 🎯 RESUMEN DE RUTAS IMPORTANTES
 
-- **Entrega Total** - La Beriso
-- **Miedo** - Caifanes
-- **Un Hombre Normal** - Espinoza Paz
-- **Gema** - Vicente Fernández
+**REPOSITORIO (archivos fuente):** `~/Desktop/musica_ios/MusicaPalHector/MusicaPalHector/`
+- Views está en: `Views/`
+- Models está en: `Models/`
+- Services está en: `Services/`
+- MP3s están en: `Resources/Songs/`
 
----
+**TU PROYECTO NUEVO:** `~/Desktop/MiProyectoNuevo/`
+- Aquí es donde trabajas en Xcode
+- Aquí es donde arrastras los archivos
 
-# 📱 INSTALAR EN TU IPHONE FÍSICO
+**COMANDOS PARA ABRIR CARPETAS:**
+```bash
+# Abrir repositorio con archivos fuente
+open ~/Desktop/musica_ios/MusicaPalHector/MusicaPalHector
 
-1. **Conecta tu iPhone** con cable USB
-2. **En iPhone**: Ajustes → Privacidad → Modo Desarrollador → ON
-3. **En Xcode**: Selecciona tu iPhone en vez del simulador
-4. **Dale ▶️** (primera vez pedirá confiar en certificado)
-5. **En iPhone**: Ajustes → General → VPN y gestión → Confiar en desarrollador
+# Abrir carpeta de MP3s
+open ~/Desktop/musica_ios/MusicaPalHector/MusicaPalHector/Resources/Songs
 
----
+# Abrir tu proyecto nuevo
+open ~/Desktop/MiProyectoNuevo/
+```
 
-# 🎯 RESUMEN RÁPIDO
-
-1. **Descargar Xcode** desde App Store
-2. **Clonar repo**: `git clone git@github.com:tagaa8/musica_ios.git`
-3. **Crear proyecto nuevo** en Xcode (SwiftUI)
-4. **Arrastrar carpetas** Views, Models, Services y MP3s
-5. **Seleccionar iPhone** simulador
-6. **Dale Play** ▶️
-7. **¡Funciona!** 🎉
-
-**Tiempo total: ~15-20 minutos**
+**Tiempo total: 15-20 minutos**
