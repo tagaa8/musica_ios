@@ -146,4 +146,72 @@ Luego abre Xcode y dale ▶️
 
 ---
 
+# 🎵 CÓMO AGREGAR O QUITAR CANCIONES
+
+## UBICACIÓN DE LAS CANCIONES
+Las canciones están en: `MusicaPalHector/MusicaPalHector/Resources/`
+
+Actualmente incluye:
+- `song1.mp3` - Canción 1
+- `song2.mp3` - Canción 2  
+- `song3.mp3` - Canción 3
+- `song4.mp3` - Canción 4
+
+## PARA AGREGAR NUEVAS CANCIONES:
+
+### PASO 1: PARAR LA APP
+1. En Xcode, click en el botón **⏹️** (Stop)
+2. O presiona **Cmd+.**
+
+### PASO 2: AGREGAR ARCHIVO MP3
+1. Arrastra tu archivo `.mp3` a la carpeta `MusicaPalHector/MusicaPalHector/Resources/`
+2. Cuando aparezca el diálogo, asegúrate de marcar:
+   - ✅ **"Copy items if needed"**
+   - ✅ **"Add to target: MusicaPalHector"**
+3. Click **"Add"**
+
+### PASO 3: ACTUALIZAR EL CÓDIGO
+1. Abre `MusicaPalHector/MusicaPalHector/Managers/DataManager.swift`
+2. En la función `loadSongs()`, agrega tu canción:
+
+```swift
+Song(
+    id: 5, // Siguiente número
+    title: "Tu Canción",
+    artist: "Tu Artista", 
+    filename: "tu_archivo.mp3" // El nombre exacto del archivo
+)
+```
+
+### PASO 4: EJECUTAR DE NUEVO
+1. Click en **▶️** en Xcode
+2. La app se reinstalará con las nuevas canciones
+
+## PARA QUITAR CANCIONES:
+
+### PASO 1: PARAR LA APP
+1. En Xcode, click en **⏹️** (Stop)
+
+### PASO 2: ELIMINAR ARCHIVO
+1. En Xcode, click derecho en el archivo `.mp3` en `Resources/`
+2. Selecciona **"Delete"** → **"Move to Trash"**
+
+### PASO 3: ACTUALIZAR EL CÓDIGO
+1. Abre `MusicaPalHector/MusicaPalHector/Managers/DataManager.swift`
+2. Elimina la entrada correspondiente de la función `loadSongs()`
+
+### PASO 4: EJECUTAR DE NUEVO
+1. Click en **▶️** en Xcode
+2. La canción desaparecerá de la app
+
+## FORMATOS SOPORTADOS
+- ✅ MP3
+- ✅ M4A
+- ✅ WAV
+- ❌ FLAC (no compatible con iOS)
+
+**IMPORTANTE**: Después de cualquier cambio, siempre para la app y ejecuta de nuevo para ver los cambios.
+
+---
+
 **Si sigues estos pasos exactos, la app funcionará sin errores.**
