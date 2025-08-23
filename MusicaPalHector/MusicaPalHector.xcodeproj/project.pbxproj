@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1234567890123456789012A /* MusicaPalHectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789012B /* MusicaPalHectorApp.swift */; };
-		C1234567890123456789012C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789012D /* ContentView.swift */; };
-		C1234567890123456789012E /* AllSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789012F /* AllSongsView.swift */; };
-		C1234567890123456789013A /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789013B /* PlaylistsView.swift */; };
-		C1234567890123456789013C /* LikedSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789013D /* LikedSongsView.swift */; };
-		C1234567890123456789013E /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789013F /* NowPlayingView.swift */; };
-		C1234567890123456789014A /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789014B /* MiniPlayerView.swift */; };
-		C1234567890123456789014C /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789014D /* SongRowView.swift */; };
-		C1234567890123456789014E /* PlaylistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789014F /* PlaylistDetailView.swift */; };
-		C1234567890123456789015A /* PlaylistPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789015B /* PlaylistPickerView.swift */; };
-		C1234567890123456789015C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789015D /* Song.swift */; };
-		C1234567890123456789015E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789015F /* AudioManager.swift */; };
-		C1234567890123456789016A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789016B /* DataManager.swift */; };
-		C1234567890123456789016C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789016D /* Assets.xcassets */; };
-		C1234567890123456789016E /* EntregaTotal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789016F /* EntregaTotal.mp3 */; };
-		C1234567890123456789017A /* CaifanesMiedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789017B /* CaifanesMiedo.mp3 */; };
-		C1234567890123456789017C /* UnHombreNormal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789017D /* UnHombreNormal.mp3 */; };
-		C1234567890123456789017E /* VicenteFernandezGema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1234567890123456789017F /* VicenteFernandezGema.mp3 */; };
+		1A2B3C4D5E6F7890ABCDEF01 /* MusicaPalHectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF02 /* MusicaPalHectorApp.swift */; };
+		1A2B3C4D5E6F7890ABCDEF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF04 /* ContentView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF05 /* AllSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF06 /* AllSongsView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF07 /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF08 /* PlaylistsView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF09 /* LikedSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF0A /* LikedSongsView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF0B /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF0C /* NowPlayingView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF0D /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF0E /* MiniPlayerView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF0F /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF10 /* SongRowView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF11 /* PlaylistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF12 /* PlaylistDetailView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF13 /* PlaylistPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF14 /* PlaylistPickerView.swift */; };
+		1A2B3C4D5E6F7890ABCDEF15 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF16 /* Song.swift */; };
+		1A2B3C4D5E6F7890ABCDEF17 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF18 /* AudioManager.swift */; };
+		1A2B3C4D5E6F7890ABCDEF19 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1A /* DataManager.swift */; };
+		1A2B3C4D5E6F7890ABCDEF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1C /* Assets.xcassets */; };
+		1A2B3C4D5E6F7890ABCDEF1D /* EntregaTotal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF1E /* EntregaTotal.mp3 */; };
+		1A2B3C4D5E6F7890ABCDEF1F /* CaifanesMiedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF20 /* CaifanesMiedo.mp3 */; };
+		1A2B3C4D5E6F7890ABCDEF21 /* UnHombreNormal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF22 /* UnHombreNormal.mp3 */; };
+		1A2B3C4D5E6F7890ABCDEF23 /* VicenteFernandezGema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7890ABCDEF24 /* VicenteFernandezGema.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C12345678901234567890128 /* MusicaPalHector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicaPalHector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1234567890123456789012B /* MusicaPalHectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaPalHectorApp.swift; sourceTree = "<group>"; };
-		C1234567890123456789012D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C1234567890123456789012F /* AllSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsView.swift; sourceTree = "<group>"; };
-		C1234567890123456789013B /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
-		C1234567890123456789013D /* LikedSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedSongsView.swift; sourceTree = "<group>"; };
-		C1234567890123456789013F /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
-		C1234567890123456789014B /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
-		C1234567890123456789014D /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
-		C1234567890123456789014F /* PlaylistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailView.swift; sourceTree = "<group>"; };
-		C1234567890123456789015B /* PlaylistPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPickerView.swift; sourceTree = "<group>"; };
-		C1234567890123456789015D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		C1234567890123456789015F /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
-		C1234567890123456789016B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		C1234567890123456789016D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1234567890123456789016F /* EntregaTotal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EntregaTotal.mp3; sourceTree = "<group>"; };
-		C1234567890123456789017B /* CaifanesMiedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CaifanesMiedo.mp3; sourceTree = "<group>"; };
-		C1234567890123456789017D /* UnHombreNormal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = UnHombreNormal.mp3; sourceTree = "<group>"; };
-		C1234567890123456789017F /* VicenteFernandezGema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VicenteFernandezGema.mp3; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF25 /* MusicaPalHector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicaPalHector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2B3C4D5E6F7890ABCDEF02 /* MusicaPalHectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaPalHectorApp.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF06 /* AllSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF08 /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF0A /* LikedSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedSongsView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF0C /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF0E /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF10 /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF12 /* PlaylistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF14 /* PlaylistPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPickerView.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF16 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF18 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF1A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF1E /* EntregaTotal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EntregaTotal.mp3; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF20 /* CaifanesMiedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CaifanesMiedo.mp3; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF22 /* UnHombreNormal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = UnHombreNormal.mp3; sourceTree = "<group>"; };
+		1A2B3C4D5E6F7890ABCDEF24 /* VicenteFernandezGema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VicenteFernandezGema.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C12345678901234567890125 /* Frameworks */ = {
+		1A2B3C4D5E6F7890ABCDEF26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,83 +60,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C1234567890123456789011F = {
+		1A2B3C4D5E6F7890ABCDEF27 = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789012A /* MusicaPalHector */,
-				C12345678901234567890129 /* Products */,
+				1A2B3C4D5E6F7890ABCDEF28 /* MusicaPalHector */,
+				1A2B3C4D5E6F7890ABCDEF29 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C12345678901234567890129 /* Products */ = {
+		1A2B3C4D5E6F7890ABCDEF29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C12345678901234567890128 /* MusicaPalHector.app */,
+				1A2B3C4D5E6F7890ABCDEF25 /* MusicaPalHector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1234567890123456789012A /* MusicaPalHector */ = {
+		1A2B3C4D5E6F7890ABCDEF28 /* MusicaPalHector */ = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789012B /* MusicaPalHectorApp.swift */,
-				C12345678901234567890130 /* Views */,
-				C12345678901234567890131 /* Models */,
-				C12345678901234567890132 /* Services */,
-				C12345678901234567890133 /* Resources */,
-				C1234567890123456789016D /* Assets.xcassets */,
+				1A2B3C4D5E6F7890ABCDEF02 /* MusicaPalHectorApp.swift */,
+				1A2B3C4D5E6F7890ABCDEF30 /* Views */,
+				1A2B3C4D5E6F7890ABCDEF31 /* Models */,
+				1A2B3C4D5E6F7890ABCDEF32 /* Services */,
+				1A2B3C4D5E6F7890ABCDEF33 /* Resources */,
+				1A2B3C4D5E6F7890ABCDEF1C /* Assets.xcassets */,
 			);
 			path = MusicaPalHector;
 			sourceTree = "<group>";
 		};
-		C12345678901234567890130 /* Views */ = {
+		1A2B3C4D5E6F7890ABCDEF30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789012D /* ContentView.swift */,
-				C1234567890123456789012F /* AllSongsView.swift */,
-				C1234567890123456789013B /* PlaylistsView.swift */,
-				C1234567890123456789013D /* LikedSongsView.swift */,
-				C1234567890123456789013F /* NowPlayingView.swift */,
-				C1234567890123456789014B /* MiniPlayerView.swift */,
-				C1234567890123456789014D /* SongRowView.swift */,
-				C1234567890123456789014F /* PlaylistDetailView.swift */,
-				C1234567890123456789015B /* PlaylistPickerView.swift */,
+				1A2B3C4D5E6F7890ABCDEF04 /* ContentView.swift */,
+				1A2B3C4D5E6F7890ABCDEF06 /* AllSongsView.swift */,
+				1A2B3C4D5E6F7890ABCDEF08 /* PlaylistsView.swift */,
+				1A2B3C4D5E6F7890ABCDEF0A /* LikedSongsView.swift */,
+				1A2B3C4D5E6F7890ABCDEF0C /* NowPlayingView.swift */,
+				1A2B3C4D5E6F7890ABCDEF0E /* MiniPlayerView.swift */,
+				1A2B3C4D5E6F7890ABCDEF10 /* SongRowView.swift */,
+				1A2B3C4D5E6F7890ABCDEF12 /* PlaylistDetailView.swift */,
+				1A2B3C4D5E6F7890ABCDEF14 /* PlaylistPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C12345678901234567890131 /* Models */ = {
+		1A2B3C4D5E6F7890ABCDEF31 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789015D /* Song.swift */,
+				1A2B3C4D5E6F7890ABCDEF16 /* Song.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C12345678901234567890132 /* Services */ = {
+		1A2B3C4D5E6F7890ABCDEF32 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789015F /* AudioManager.swift */,
-				C1234567890123456789016B /* DataManager.swift */,
+				1A2B3C4D5E6F7890ABCDEF18 /* AudioManager.swift */,
+				1A2B3C4D5E6F7890ABCDEF1A /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		C12345678901234567890133 /* Resources */ = {
+		1A2B3C4D5E6F7890ABCDEF33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C12345678901234567890134 /* Songs */,
+				1A2B3C4D5E6F7890ABCDEF34 /* Songs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C12345678901234567890134 /* Songs */ = {
+		1A2B3C4D5E6F7890ABCDEF34 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				C1234567890123456789016F /* EntregaTotal.mp3 */,
-				C1234567890123456789017B /* CaifanesMiedo.mp3 */,
-				C1234567890123456789017D /* UnHombreNormal.mp3 */,
-				C1234567890123456789017F /* VicenteFernandezGema.mp3 */,
+				1A2B3C4D5E6F7890ABCDEF1E /* EntregaTotal.mp3 */,
+				1A2B3C4D5E6F7890ABCDEF20 /* CaifanesMiedo.mp3 */,
+				1A2B3C4D5E6F7890ABCDEF22 /* UnHombreNormal.mp3 */,
+				1A2B3C4D5E6F7890ABCDEF24 /* VicenteFernandezGema.mp3 */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -144,13 +144,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C12345678901234567890127 /* MusicaPalHector */ = {
+		1A2B3C4D5E6F7890ABCDEF35 /* MusicaPalHector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C12345678901234567890136 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */;
+			buildConfigurationList = 1A2B3C4D5E6F7890ABCDEF36 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */;
 			buildPhases = (
-				C12345678901234567890124 /* Sources */,
-				C12345678901234567890125 /* Frameworks */,
-				C12345678901234567890126 /* Resources */,
+				1A2B3C4D5E6F7890ABCDEF37 /* Sources */,
+				1A2B3C4D5E6F7890ABCDEF26 /* Frameworks */,
+				1A2B3C4D5E6F7890ABCDEF38 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -158,25 +158,25 @@
 			);
 			name = MusicaPalHector;
 			productName = MusicaPalHector;
-			productReference = C12345678901234567890128 /* MusicaPalHector.app */;
+			productReference = 1A2B3C4D5E6F7890ABCDEF25 /* MusicaPalHector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C12345678901234567890120 /* Project object */ = {
+		1A2B3C4D5E6F7890ABCDEF39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					C12345678901234567890127 = {
+					1A2B3C4D5E6F7890ABCDEF35 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = C12345678901234567890123 /* Build configuration list for PBXProject "MusicaPalHector" */;
+			buildConfigurationList = 1A2B3C4D5E6F7890ABCDEF40 /* Build configuration list for PBXProject "MusicaPalHector" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,56 +184,56 @@
 				en,
 				Base,
 			);
-			mainGroup = C1234567890123456789011F;
-			productRefGroup = C12345678901234567890129 /* Products */;
+			mainGroup = 1A2B3C4D5E6F7890ABCDEF27;
+			productRefGroup = 1A2B3C4D5E6F7890ABCDEF29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C12345678901234567890127 /* MusicaPalHector */,
+				1A2B3C4D5E6F7890ABCDEF35 /* MusicaPalHector */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C12345678901234567890126 /* Resources */ = {
+		1A2B3C4D5E6F7890ABCDEF38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1234567890123456789016C /* Assets.xcassets in Resources */,
-				C1234567890123456789016E /* EntregaTotal.mp3 in Resources */,
-				C1234567890123456789017A /* CaifanesMiedo.mp3 in Resources */,
-				C1234567890123456789017C /* UnHombreNormal.mp3 in Resources */,
-				C1234567890123456789017E /* VicenteFernandezGema.mp3 in Resources */,
+				1A2B3C4D5E6F7890ABCDEF1B /* Assets.xcassets in Resources */,
+				1A2B3C4D5E6F7890ABCDEF1D /* EntregaTotal.mp3 in Resources */,
+				1A2B3C4D5E6F7890ABCDEF1F /* CaifanesMiedo.mp3 in Resources */,
+				1A2B3C4D5E6F7890ABCDEF21 /* UnHombreNormal.mp3 in Resources */,
+				1A2B3C4D5E6F7890ABCDEF23 /* VicenteFernandezGema.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C12345678901234567890124 /* Sources */ = {
+		1A2B3C4D5E6F7890ABCDEF37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1234567890123456789012A /* MusicaPalHectorApp.swift in Sources */,
-				C1234567890123456789012C /* ContentView.swift in Sources */,
-				C1234567890123456789012E /* AllSongsView.swift in Sources */,
-				C1234567890123456789013A /* PlaylistsView.swift in Sources */,
-				C1234567890123456789013C /* LikedSongsView.swift in Sources */,
-				C1234567890123456789013E /* NowPlayingView.swift in Sources */,
-				C1234567890123456789014A /* MiniPlayerView.swift in Sources */,
-				C1234567890123456789014C /* SongRowView.swift in Sources */,
-				C1234567890123456789014E /* PlaylistDetailView.swift in Sources */,
-				C1234567890123456789015A /* PlaylistPickerView.swift in Sources */,
-				C1234567890123456789015C /* Song.swift in Sources */,
-				C1234567890123456789015E /* AudioManager.swift in Sources */,
-				C1234567890123456789016A /* DataManager.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF01 /* MusicaPalHectorApp.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF03 /* ContentView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF05 /* AllSongsView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF07 /* PlaylistsView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF09 /* LikedSongsView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF0B /* NowPlayingView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF0D /* MiniPlayerView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF0F /* SongRowView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF11 /* PlaylistDetailView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF13 /* PlaylistPickerView.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF15 /* Song.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF17 /* AudioManager.swift in Sources */,
+				1A2B3C4D5E6F7890ABCDEF19 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C12345678901234567890121 /* Debug */ = {
+		1A2B3C4D5E6F7890ABCDEF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +296,7 @@
 			};
 			name = Debug;
 		};
-		C12345678901234567890122 /* Release */ = {
+		1A2B3C4D5E6F7890ABCDEF42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,7 +352,7 @@
 			};
 			name = Release;
 		};
-		C12345678901234567890137 /* Debug */ = {
+		1A2B3C4D5E6F7890ABCDEF43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -380,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		C12345678901234567890138 /* Release */ = {
+		1A2B3C4D5E6F7890ABCDEF44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -411,25 +411,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C12345678901234567890123 /* Build configuration list for PBXProject "MusicaPalHector" */ = {
+		1A2B3C4D5E6F7890ABCDEF40 /* Build configuration list for PBXProject "MusicaPalHector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C12345678901234567890121 /* Debug */,
-				C12345678901234567890122 /* Release */,
+				1A2B3C4D5E6F7890ABCDEF41 /* Debug */,
+				1A2B3C4D5E6F7890ABCDEF42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C12345678901234567890136 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */ = {
+		1A2B3C4D5E6F7890ABCDEF36 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C12345678901234567890137 /* Debug */,
-				C12345678901234567890138 /* Release */,
+				1A2B3C4D5E6F7890ABCDEF43 /* Debug */,
+				1A2B3C4D5E6F7890ABCDEF44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C12345678901234567890120 /* Project object */;
+	rootObject = 1A2B3C4D5E6F7890ABCDEF39 /* Project object */;
 }

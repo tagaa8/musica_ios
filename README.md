@@ -76,12 +76,17 @@ xcrun simctl erase all
 4. Dale ▶️ nuevamente
 
 ## Error: "The project 'MusicaPalHector' is damaged and cannot be opened"
-**Solución:**
+**Solución DEFINITIVA:**
+1. Cierra Xcode completamente
+2. Ejecuta estos comandos:
 ```bash
 cd ~/Desktop/musica_ios
 git pull
+rm -rf ~/Library/Developer/Xcode/DerivedData/*
 open MusicaPalHector/MusicaPalHector.xcodeproj
 ```
+3. Espera a que abra completamente
+4. Si sigue dando error, reinicia tu Mac y repite
 
 ## Error: "Cannot find module" o "Cannot find 'AudioManager'"
 **Solución:**
