@@ -1,15 +1,17 @@
 # Música Pal Héctor 🎵
 
-Reproductor de música para iOS con canciones incluidas. No requiere internet.
+Reproductor de música para iOS con 4 canciones incluidas. Funciona sin internet.
+
+**PARA USUARIOS DE MAC ÚNICAMENTE**
 
 ---
 
-# 🚀 INSTALACIÓN SÚPER FÁCIL
+# 🚀 INSTALACIÓN (4 PASOS)
 
-## PASO 1: CLONAR EL REPOSITORIO
+## PASO 1: DESCARGAR
 ```bash
 cd ~/Desktop
-git clone git@github.com:tagaa8/musica_ios.git
+git clone https://github.com/tagaa8/musica_ios.git
 cd musica_ios
 ```
 
@@ -19,50 +21,75 @@ open MusicaPalHector/MusicaPalHector.xcodeproj
 ```
 
 ## PASO 3: SELECCIONAR SIMULADOR
-En Xcode, arriba donde dice "My Mac", cámbialo a **iPhone 15 Pro**
+En Xcode, arriba donde dice "My Mac", selecciona **iPhone 15 Pro**
 
 ## PASO 4: EJECUTAR
-Dale click al botón **▶️** y listo!
+Click en el botón **▶️** y espera 2-3 minutos
 
 ---
 
-# ✅ FLUJO SÚPER FÁCIL PARA CAMBIOS
+# ✅ ACTUALIZACIONES
 
-Cuando yo haga cambios y los suba al repositorio:
-
+Para obtener nuevas versiones:
 ```bash
 cd ~/Desktop/musica_ios
 git pull
 ```
 
-Y ya. No necesitas recrear nada ni mover archivos. 
-
-El proyecto YA está configurado correctamente en el repositorio.
+No necesitas mover archivos ni recrear proyecto.
 
 ---
 
-# 🔧 SI HAY ERRORES
+# 🔧 ERRORES COMUNES Y SOLUCIONES
 
-## "No ObservableObject of type AudioManager found"
-```bash
-# En Xcode: Product → Clean Build Folder (Cmd+Shift+K)
-# Luego dale ▶️ de nuevo
-```
+## Error: "No ObservableObject of type AudioManager found"
+**Solución:**
+1. En Xcode: `Product` → `Clean Build Folder` (Cmd+Shift+K)
+2. Espera que termine
+3. Dale ▶️ nuevamente
 
-## "Failed to launch app in reasonable time"
-```bash
-# Cambia a iPhone 14 en vez de iPhone 15 Pro
-# Espera 5 minutos completos
-```
-
-## Si nada funciona:
+## Error: "Failed to launch app in reasonable time"
+**Solución:**
+1. Cambia simulador a **iPhone 14** (en vez de iPhone 15 Pro)
+2. Dale ▶️ y espera **5 minutos completos**
+3. Si sigue sin funcionar, ejecuta:
 ```bash
 killall Xcode
 killall Simulator
 xcrun simctl shutdown all
 xcrun simctl erase all
 ```
+4. Abre Xcode de nuevo y repite
+
+## Error: "Build input file cannot be found"
+**Solución:**
+1. En Xcode, click en el proyecto (carpeta azul)
+2. Ve a TARGETS → MusicaPalHector → Build Phases
+3. En "Compile Sources", busca archivos en rojo y elimínalos
+4. Dale ▶️ nuevamente
+
+## Error: "Cannot find module" o "Cannot find 'AudioManager'"
+**Solución:**
+```bash
+# En terminal:
+cd ~/Desktop/musica_ios
+git pull
+```
+Luego abre Xcode y dale ▶️
 
 ---
 
-**Tiempo total: 2 minutos**
+# 📱 FUNCIONES DE LA APP
+
+- ✅ Reproducir 4 canciones incluidas
+- ✅ Play/Pause, Siguiente, Anterior  
+- ✅ Shuffle y Repeat
+- ✅ Favoritos (botón ❤️)
+- ✅ Playlists personalizadas
+- ✅ Top 25 automático
+- ✅ Visualizador de ondas
+- ✅ Control desde pantalla de bloqueo
+
+---
+
+**Si sigues estos pasos exactos, la app funcionará sin errores.**
