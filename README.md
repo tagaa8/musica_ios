@@ -20,6 +20,13 @@ cd musica_ios
 open MusicaPalHector/MusicaPalHector.xcodeproj
 ```
 
+**Si te da error "project is damaged":**
+```bash
+cd ~/Desktop/musica_ios
+git pull
+open MusicaPalHector/MusicaPalHector.xcodeproj
+```
+
 ## PASO 3: SELECCIONAR SIMULADOR
 En Xcode, arriba donde dice "My Mac", selecciona **iPhone 15 Pro**
 
@@ -67,6 +74,14 @@ xcrun simctl erase all
 2. Ve a TARGETS → MusicaPalHector → Build Phases
 3. En "Compile Sources", busca archivos en rojo y elimínalos
 4. Dale ▶️ nuevamente
+
+## Error: "The project 'MusicaPalHector' is damaged and cannot be opened"
+**Solución:**
+```bash
+cd ~/Desktop/musica_ios
+git pull
+open MusicaPalHector/MusicaPalHector.xcodeproj
+```
 
 ## Error: "Cannot find module" o "Cannot find 'AudioManager'"
 **Solución:**
