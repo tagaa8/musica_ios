@@ -21,8 +21,8 @@ struct MusicaPalHectorApp: App {
     
     private func setupAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.allowAirPlay, .allowBluetooth, .allowBluetoothA2DP])
+            try AVAudioSession.sharedInstance().setActive(true, options: [])
         } catch {
             print("Failed to setup audio session: \(error)")
         }

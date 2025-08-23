@@ -104,12 +104,12 @@ struct NowPlayingView: View {
                     }
                     .padding(.horizontal, 20)
                     
-                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 50 : 30) {
+                    HStack(spacing: UIScreen.main.bounds.width > 390 ? 45 : (UIScreen.main.bounds.width > 375 ? 35 : 25)) {
                         Button(action: {
                             audioManager.toggleShuffle()
                         }) {
                             Image(systemName: "shuffle")
-                                .font(.system(size: 22))
+                                .font(.system(size: UIScreen.main.bounds.width > 375 ? 22 : 18))
                                 .foregroundColor(audioManager.shuffleEnabled ? .purple : .white.opacity(0.7))
                         }
                         
@@ -117,7 +117,7 @@ struct NowPlayingView: View {
                             audioManager.previous()
                         }) {
                             Image(systemName: "backward.fill")
-                                .font(.system(size: 28))
+                                .font(.system(size: UIScreen.main.bounds.width > 375 ? 28 : 24))
                                 .foregroundColor(.white)
                         }
                         
@@ -135,7 +135,7 @@ struct NowPlayingView: View {
                             audioManager.next()
                         }) {
                             Image(systemName: "forward.fill")
-                                .font(.system(size: 28))
+                                .font(.system(size: UIScreen.main.bounds.width > 375 ? 28 : 24))
                                 .foregroundColor(.white)
                         }
                         
@@ -143,13 +143,13 @@ struct NowPlayingView: View {
                             audioManager.cycleRepeatMode()
                         }) {
                             Image(systemName: audioManager.repeatMode.systemImage)
-                                .font(.system(size: 22))
+                                .font(.system(size: UIScreen.main.bounds.width > 375 ? 22 : 18))
                                 .foregroundColor(audioManager.repeatMode != .off ? .purple : .white.opacity(0.7))
                         }
                     }
                     .padding(.vertical, UIScreen.main.bounds.height > 800 ? 20 : 10)
                     
-                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 25 : 15) {
+                    HStack(spacing: UIScreen.main.bounds.width > 390 ? 25 : (UIScreen.main.bounds.width > 375 ? 20 : 15)) {
                         Button(action: {
                             if let song = audioManager.currentSong {
                                 dataManager.toggleLike(for: song)
@@ -171,7 +171,7 @@ struct NowPlayingView: View {
                                 .foregroundColor(.gray)
                             
                             Slider(value: $audioManager.volume, in: 0...1)
-                                .frame(width: UIScreen.main.bounds.width > 375 ? 100 : 80)
+                                .frame(width: UIScreen.main.bounds.width > 390 ? 90 : (UIScreen.main.bounds.width > 375 ? 75 : 65))
                                 .accentColor(.purple)
                             
                             Image(systemName: "speaker.wave.3.fill")
@@ -198,26 +198,21 @@ struct NowPlayingView: View {
                 .environmentObject(audioManager)
                 .environmentObject(dataManager)
         }
-        .actionSheet(isPresented: $showOptionsMenu) {
-            ActionSheet(
-                title: Text(audioManager.currentSong?.title ?? "Opciones"),
-                buttons: [
-                    .default(Text("Añadir a cola")) {
-                        if let song = audioManager.currentSong {
-                            audioManager.addToQueue(song)
-                        }
-                    },
-                    .default(Text("Añadir a Me gusta")) {
-                        if let song = audioManager.currentSong {
-                            dataManager.toggleLike(for: song)
-                            if let index = dataManager.songs.firstIndex(where: { $0.id == song.id }) {
-                                audioManager.currentSong = dataManager.songs[index]
-                            }
-                        }
-                    },
-                    .cancel(Text("Cancelar"))
-                ]
-            )
+        .confirmationDialog("Opciones", isPresented: $showOptionsMenu) {
+            Button("Añadir a cola") {
+                if let song = audioManager.currentSong {
+                    audioManager.addToQueue(song)
+                }
+            }
+            Button("Añadir a Me gusta") {
+                if let song = audioManager.currentSong {
+                    dataManager.toggleLike(for: song)
+                    if let index = dataManager.songs.firstIndex(where: { $0.id == song.id }) {
+                        audioManager.currentSong = dataManager.songs[index]
+                    }
+                }
+            }
+            Button("Cancelar", role: .cancel) { }
         }
     }
     
