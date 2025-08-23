@@ -7,20 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4B4B4B41A1A1A1A1A1A1A1A /* MusicaPalHectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B4B31A1A1A1A1A1A1A1A /* MusicaPalHectorApp.swift */; };
-		B4B4B4B61A1A1A1A1A1A1A1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B4B51A1A1A1A1A1A1A1A /* ContentView.swift */; };
-		B4B4B4B81A1A1A1A1A1A1A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B4B4B71A1A1A1A1A1A1A1A /* Assets.xcassets */; };
+		A1234567890123456789012A /* MusicaPalHectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012B /* MusicaPalHectorApp.swift */; };
+		A1234567890123456789012C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012D /* ContentView.swift */; };
+		A1234567890123456789012E /* AllSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012F /* AllSongsView.swift */; };
+		A1234567890123456789013A /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013B /* PlaylistsView.swift */; };
+		A1234567890123456789013C /* LikedSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013D /* LikedSongsView.swift */; };
+		A1234567890123456789013E /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013F /* NowPlayingView.swift */; };
+		A1234567890123456789014A /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014B /* MiniPlayerView.swift */; };
+		A1234567890123456789014C /* SongRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014D /* SongRowView.swift */; };
+		A1234567890123456789014E /* PlaylistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014F /* PlaylistDetailView.swift */; };
+		A1234567890123456789015A /* PlaylistPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015B /* PlaylistPickerView.swift */; };
+		A1234567890123456789015C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015D /* Song.swift */; };
+		A1234567890123456789015E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015F /* AudioManager.swift */; };
+		A1234567890123456789016A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016B /* DataManager.swift */; };
+		A1234567890123456789016C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016D /* Assets.xcassets */; };
+		A1234567890123456789016E /* EntregaTotal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016F /* EntregaTotal.mp3 */; };
+		A1234567890123456789017A /* CaifanesMiedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017B /* CaifanesMiedo.mp3 */; };
+		A1234567890123456789017C /* UnHombreNormal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017D /* UnHombreNormal.mp3 */; };
+		A1234567890123456789017E /* VicenteFernandezGema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017F /* VicenteFernandezGema.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4B4B4B01A1A1A1A1A1A1A1A /* MusicaPalHector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicaPalHector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4B4B4B31A1A1A1A1A1A1A1A /* MusicaPalHectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaPalHectorApp.swift; sourceTree = "<group>"; };
-		B4B4B4B51A1A1A1A1A1A1A1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B4B4B4B71A1A1A1A1A1A1A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A12345678901234567890128 /* MusicaPalHector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicaPalHector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1234567890123456789012B /* MusicaPalHectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaPalHectorApp.swift; sourceTree = "<group>"; };
+		A1234567890123456789012D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1234567890123456789012F /* AllSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsView.swift; sourceTree = "<group>"; };
+		A1234567890123456789013B /* PlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
+		A1234567890123456789013D /* LikedSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedSongsView.swift; sourceTree = "<group>"; };
+		A1234567890123456789013F /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		A1234567890123456789014B /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		A1234567890123456789014D /* SongRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowView.swift; sourceTree = "<group>"; };
+		A1234567890123456789014F /* PlaylistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailView.swift; sourceTree = "<group>"; };
+		A1234567890123456789015B /* PlaylistPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPickerView.swift; sourceTree = "<group>"; };
+		A1234567890123456789015D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A1234567890123456789015F /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A1234567890123456789016B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A1234567890123456789016D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1234567890123456789016F /* EntregaTotal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EntregaTotal.mp3; sourceTree = "<group>"; };
+		A1234567890123456789017B /* CaifanesMiedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CaifanesMiedo.mp3; sourceTree = "<group>"; };
+		A1234567890123456789017D /* UnHombreNormal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = UnHombreNormal.mp3; sourceTree = "<group>"; };
+		A1234567890123456789017F /* VicenteFernandezGema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VicenteFernandezGema.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B4B4B4AD1A1A1A1A1A1A1A1A /* Frameworks */ = {
+		A12345678901234567890125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -30,42 +60,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B4B4B4A71A1A1A1A1A1A1A1A = {
+		A1234567890123456789011F /* */ = {
 			isa = PBXGroup;
 			children = (
-				B4B4B4B21A1A1A1A1A1A1A1A /* MusicaPalHector */,
-				B4B4B4B11A1A1A1A1A1A1A1A /* Products */,
+				A1234567890123456789012A /* MusicaPalHector */,
+				A12345678901234567890129 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B4B4B4B11A1A1A1A1A1A1A1A /* Products */ = {
+		A12345678901234567890129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4B4B4B01A1A1A1A1A1A1A1A /* MusicaPalHector.app */,
+				A12345678901234567890128 /* MusicaPalHector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4B4B4B21A1A1A1A1A1A1A1A /* MusicaPalHector */ = {
+		A1234567890123456789012A /* MusicaPalHector */ = {
 			isa = PBXGroup;
 			children = (
-				B4B4B4B31A1A1A1A1A1A1A1A /* MusicaPalHectorApp.swift */,
-				B4B4B4B51A1A1A1A1A1A1A1A /* ContentView.swift */,
-				B4B4B4B71A1A1A1A1A1A1A1A /* Assets.xcassets */,
+				A1234567890123456789012B /* MusicaPalHectorApp.swift */,
+				A12345678901234567890130 /* Views */,
+				A12345678901234567890131 /* Models */,
+				A12345678901234567890132 /* Services */,
+				A12345678901234567890133 /* Resources */,
+				A1234567890123456789016D /* Assets.xcassets */,
 			);
 			path = MusicaPalHector;
+			sourceTree = "<group>";
+		};
+		A12345678901234567890130 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789012D /* ContentView.swift */,
+				A1234567890123456789012F /* AllSongsView.swift */,
+				A1234567890123456789013B /* PlaylistsView.swift */,
+				A1234567890123456789013D /* LikedSongsView.swift */,
+				A1234567890123456789013F /* NowPlayingView.swift */,
+				A1234567890123456789014B /* MiniPlayerView.swift */,
+				A1234567890123456789014D /* SongRowView.swift */,
+				A1234567890123456789014F /* PlaylistDetailView.swift */,
+				A1234567890123456789015B /* PlaylistPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A12345678901234567890131 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789015D /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A12345678901234567890132 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789015F /* AudioManager.swift */,
+				A1234567890123456789016B /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A12345678901234567890133 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A12345678901234567890134 /* Songs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A12345678901234567890134 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890123456789016F /* EntregaTotal.mp3 */,
+				A1234567890123456789017B /* CaifanesMiedo.mp3 */,
+				A1234567890123456789017D /* UnHombreNormal.mp3 */,
+				A1234567890123456789017F /* VicenteFernandezGema.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4B4B4AF1A1A1A1A1A1A1A1A /* MusicaPalHector */ = {
+		A12345678901234567890127 /* MusicaPalHector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4B4B4BE1A1A1A1A1A1A1A1A /* Build configuration list for PBXNativeTarget "MusicaPalHector" */;
+			buildConfigurationList = A12345678901234567890136 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */;
 			buildPhases = (
-				B4B4B4AC1A1A1A1A1A1A1A1A /* Sources */,
-				B4B4B4AD1A1A1A1A1A1A1A1A /* Frameworks */,
-				B4B4B4AE1A1A1A1A1A1A1A1A /* Resources */,
+				A12345678901234567890124 /* Sources */,
+				A12345678901234567890125 /* Frameworks */,
+				A12345678901234567890126 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -73,25 +158,25 @@
 			);
 			name = MusicaPalHector;
 			productName = MusicaPalHector;
-			productReference = B4B4B4B01A1A1A1A1A1A1A1A /* MusicaPalHector.app */;
+			productReference = A12345678901234567890128 /* MusicaPalHector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B4B4B4A81A1A1A1A1A1A1A1A /* Project object */ = {
+		A12345678901234567890120 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					B4B4B4AF1A1A1A1A1A1A1A1A = {
-						CreatedOnToolsVersion = 14.3;
+					A12345678901234567890127 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = B4B4B4AB1A1A1A1A1A1A1A1A /* Build configuration list for PBXProject "MusicaPalHector" */;
+			buildConfigurationList = A12345678901234567890123 /* Build configuration list for PBXProject "MusicaPalHector" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -99,44 +184,60 @@
 				en,
 				Base,
 			);
-			mainGroup = B4B4B4A71A1A1A1A1A1A1A1A;
-			productRefGroup = B4B4B4B11A1A1A1A1A1A1A1A /* Products */;
+			mainGroup = A1234567890123456789011F /* */;
+			productRefGroup = A12345678901234567890129 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4B4B4AF1A1A1A1A1A1A1A1A /* MusicaPalHector */,
+				A12345678901234567890127 /* MusicaPalHector */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B4B4B4AE1A1A1A1A1A1A1A1A /* Resources */ = {
+		A12345678901234567890126 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B4B4B81A1A1A1A1A1A1A1A /* Assets.xcassets in Resources */,
+				A1234567890123456789016C /* Assets.xcassets in Resources */,
+				A1234567890123456789016E /* EntregaTotal.mp3 in Resources */,
+				A1234567890123456789017A /* CaifanesMiedo.mp3 in Resources */,
+				A1234567890123456789017C /* UnHombreNormal.mp3 in Resources */,
+				A1234567890123456789017E /* VicenteFernandezGema.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B4B4B4AC1A1A1A1A1A1A1A1A /* Sources */ = {
+		A12345678901234567890124 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B4B4B61A1A1A1A1A1A1A1A /* ContentView.swift in Sources */,
-				B4B4B4B41A1A1A1A1A1A1A1A /* MusicaPalHectorApp.swift in Sources */,
+				A1234567890123456789012A /* MusicaPalHectorApp.swift in Sources */,
+				A1234567890123456789012C /* ContentView.swift in Sources */,
+				A1234567890123456789012E /* AllSongsView.swift in Sources */,
+				A1234567890123456789013A /* PlaylistsView.swift in Sources */,
+				A1234567890123456789013C /* LikedSongsView.swift in Sources */,
+				A1234567890123456789013E /* NowPlayingView.swift in Sources */,
+				A1234567890123456789014A /* MiniPlayerView.swift in Sources */,
+				A1234567890123456789014C /* SongRowView.swift in Sources */,
+				A1234567890123456789014E /* PlaylistDetailView.swift in Sources */,
+				A1234567890123456789015A /* PlaylistPickerView.swift in Sources */,
+				A1234567890123456789015C /* Song.swift in Sources */,
+				A1234567890123456789015E /* AudioManager.swift in Sources */,
+				A1234567890123456789016A /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B4B4B4BC1A1A1A1A1A1A1A1A /* Debug */ = {
+		A12345678901234567890121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -169,7 +270,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -183,20 +285,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B4B4B4BD1A1A1A1A1A1A1A1A /* Release */ = {
+		A12345678901234567890122 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -229,7 +333,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -237,17 +342,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B4B4B4BF1A1A1A1A1A1A1A1A /* Debug */ = {
+		A12345678901234567890137 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		B4B4B4C01A1A1A1A1A1A1A1A /* Release */ = {
+		A12345678901234567890138 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -306,25 +411,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4B4B4AB1A1A1A1A1A1A1A1A /* Build configuration list for PBXProject "MusicaPalHector" */ = {
+		A12345678901234567890123 /* Build configuration list for PBXProject "MusicaPalHector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4B4B4BC1A1A1A1A1A1A1A1A /* Debug */,
-				B4B4B4BD1A1A1A1A1A1A1A1A /* Release */,
+				A12345678901234567890121 /* Debug */,
+				A12345678901234567890122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4B4B4BE1A1A1A1A1A1A1A1A /* Build configuration list for PBXNativeTarget "MusicaPalHector" */ = {
+		A12345678901234567890136 /* Build configuration list for PBXNativeTarget "MusicaPalHector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4B4B4BF1A1A1A1A1A1A1A1A /* Debug */,
-				B4B4B4C01A1A1A1A1A1A1A1A /* Release */,
+				A12345678901234567890137 /* Debug */,
+				A12345678901234567890138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B4B4B4A81A1A1A1A1A1A1A1A /* Project object */;
+	rootObject = A12345678901234567890120 /* Project object */;
 }

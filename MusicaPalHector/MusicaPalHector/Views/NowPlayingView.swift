@@ -1,5 +1,4 @@
 import SwiftUI
-import DSWaveformImage
 
 struct NowPlayingView: View {
     @EnvironmentObject var audioManager: AudioManager

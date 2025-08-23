@@ -1,5 +1,4 @@
 import Foundation
-import CoreData
 
 struct Song: Identifiable, Codable, Hashable {
     let id: UUID
