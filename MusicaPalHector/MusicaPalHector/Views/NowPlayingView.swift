@@ -46,27 +46,27 @@ struct NowPlayingView: View {
                 Spacer()
                 
                 WaveformVisualizerView(audioLevels: audioManager.audioLevels)
-                    .frame(height: 150)
-                    .padding(.horizontal)
+                    .frame(height: min(150, UIScreen.main.bounds.height * 0.15))
+                    .padding(.horizontal, 20)
                 
                 Spacer()
                 
                 VStack(spacing: 8) {
                     Text(audioManager.currentSong?.title ?? "Sin canción")
-                        .font(.largeTitle)
+                        .font(UIScreen.main.bounds.height > 800 ? .largeTitle : .title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .lineLimit(1)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 20)
                     
                     Text(audioManager.currentSong?.artist ?? "")
-                        .font(.title3)
+                        .font(UIScreen.main.bounds.height > 800 ? .title3 : .body)
                         .foregroundColor(.gray)
                         .lineLimit(1)
                 }
-                .padding(.vertical, 30)
+                .padding(.vertical, UIScreen.main.bounds.height > 800 ? 30 : 15)
                 
-                VStack(spacing: 15) {
+                VStack(spacing: UIScreen.main.bounds.height > 800 ? 15 : 10) {
                     HStack {
                         Text(formatTime(audioManager.currentTime))
                             .font(.caption)
@@ -90,7 +90,7 @@ struct NowPlayingView: View {
                     }
                     .padding(.horizontal, 30)
                     
-                    HStack(spacing: 50) {
+                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 50 : 30) {
                         Button(action: {
                             audioManager.toggleShuffle()
                         }) {
@@ -111,7 +111,7 @@ struct NowPlayingView: View {
                             audioManager.togglePlayPause()
                         }) {
                             Image(systemName: audioManager.isPlaying ? "pause.circle.fill" : "play.circle.fill")
-                                .font(.system(size: 64))
+                                .font(.system(size: UIScreen.main.bounds.height > 800 ? 64 : 48))
                                 .foregroundColor(.white)
                         }
                         .scaleEffect(audioManager.isPlaying ? 1.0 : 0.95)
@@ -133,17 +133,20 @@ struct NowPlayingView: View {
                                 .foregroundColor(audioManager.repeatMode != .off ? .purple : .white.opacity(0.7))
                         }
                     }
-                    .padding(.vertical, 20)
+                    .padding(.vertical, UIScreen.main.bounds.height > 800 ? 20 : 10)
                     
-                    HStack(spacing: 30) {
+                    HStack(spacing: UIScreen.main.bounds.width > 375 ? 30 : 20) {
                         Button(action: {
                             if let song = audioManager.currentSong {
                                 dataManager.toggleLike(for: song)
+                                if let index = dataManager.songs.firstIndex(where: { $0.id == song.id }) {
+                                    audioManager.currentSong = dataManager.songs[index]
+                                }
                             }
                         }) {
-                            Image(systemName: audioManager.currentSong?.isLiked ?? false ? "heart.fill" : "heart")
+                            Image(systemName: (dataManager.songs.first(where: { $0.id == audioManager.currentSong?.id })?.isLiked ?? false) ? "heart.fill" : "heart")
                                 .font(.system(size: 24))
-                                .foregroundColor(audioManager.currentSong?.isLiked ?? false ? .pink : .white)
+                                .foregroundColor((dataManager.songs.first(where: { $0.id == audioManager.currentSong?.id })?.isLiked ?? false) ? .pink : .white)
                         }
                         
                         Spacer()
@@ -192,7 +195,7 @@ struct WaveformVisualizerView: View {
     var body: some View {
         GeometryReader { geometry in
             HStack(alignment: .center, spacing: 2) {
-                ForEach(0..<audioLevels.count, id: \.self) { index in
+                ForEach(0..<min(audioLevels.count, 30), id: \.self) { index in
                     RoundedRectangle(cornerRadius: 2)
                         .fill(
                             LinearGradient(
@@ -202,22 +205,26 @@ struct WaveformVisualizerView: View {
                             )
                         )
                         .frame(
-                            width: (geometry.size.width / CGFloat(audioLevels.count)) - 2,
-                            height: CGFloat(audioLevels[index]) * geometry.size.height * 
-                                    (0.3 + 0.7 * sin(animationPhase + Double(index) * 0.1))
-                        )
-                        .animation(
-                            .easeInOut(duration: 0.15),
-                            value: audioLevels[index]
+                            width: max(2, (geometry.size.width / 30) - 2),
+                            height: max(8, min(geometry.size.height * 0.8, 
+                                CGFloat(audioLevels[safe: index] ?? 0.3) * geometry.size.height * 
+                                (0.3 + 0.4 * abs(sin(animationPhase + Double(index) * 0.2)))))
                         )
                 }
             }
             .frame(maxHeight: .infinity, alignment: .center)
         }
+        .frame(height: 120)
         .onAppear {
-            withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
+            withAnimation(.linear(duration: 3).repeatForever(autoreverses: false)) {
                 animationPhase = .pi * 2
             }
         }
+    }
+}
+
+extension Array {
+    subscript(safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
     }
 }

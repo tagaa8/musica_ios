@@ -49,6 +49,12 @@ No necesitas mover archivos ni recrear proyecto.
 
 # 🔧 ERRORES COMUNES Y SOLUCIONES
 
+## Error: "AddInstanceForFactory" o "Invalid frame dimension" (loop infinito)
+**Solución:**
+1. En Xcode: `Product` → `Clean Build Folder` (Cmd+Shift+K)
+2. Espera que termine
+3. Dale ▶️ nuevamente
+
 ## Error: "No ObservableObject of type AudioManager found"
 **Solución:**
 1. En Xcode: `Product` → `Clean Build Folder` (Cmd+Shift+K)
